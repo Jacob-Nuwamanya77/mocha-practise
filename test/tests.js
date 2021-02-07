@@ -8,11 +8,11 @@ const { fibonacci } = require('../app');
 
 // Testing the factorial function.
 describe('Testing factorial function', () => {
-  it.skip('argument must be an integer', () => {
+  it.skip('must be an integer argument', () => {
     const result = factorial(2);
     assert.isNumber(result);
   });
-  it.skip('argument must be greater than or equal to 0', () => {
+  it.skip('must be an argument greater than or equal to 0', () => {
     const result = factorial(0);
     assert.isAtLeast(result, 0);
   });
@@ -24,15 +24,15 @@ describe('Testing factorial function', () => {
 
 // Testing the fibonacci function.
 describe('Testing the fibonacci function', () => {
-  it('argument must be an integer', () => {
+  it('must be an integer argument', () => {
     const result = fibonacci(5);
     assert.isArray(result);
   });
-  it('argument must be greater than or equal to 0', () => {
+  it('must be an argument greater than or equal to 0', () => {
     const result = fibonacci(0);
     assert.isArray(result);
   });
-  it('argument must not be greater than 1000', () => {
+  it('must be an argument less than 1000', () => {
     const result = fibonacci(200);
     assert.isArray(result);
   });

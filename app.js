@@ -22,7 +22,7 @@ compute.fibonacci = (n) => {
     return 'argument is not an  integer';
   }
   if (n < 0) {
-    return 'argument must be at least 0';
+    return 'argument must be greater than or equal to 0';
   }
   if (n > 1000) {
     return 'argument should not be greater than 1000';
