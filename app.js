@@ -15,7 +15,6 @@ compute.factorial = (n) => {
   }
   return n * compute.factorial(n - 1);
 };
-
 // Fibonacci function.
 compute.fibonacci = (n) => {
   if (!Number.isInteger(n)) {
